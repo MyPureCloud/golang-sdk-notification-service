@@ -2,20 +2,17 @@ package concurrent_notification_service
 
 import (
 	"fmt"
-	"github.com/MyPureCloud/golang-sdk-notification-service.git/command_factory"
 	"github.com/gorilla/websocket"
-	"github.com/tidwall/pretty"
-	"strings"
-	//"github.com/MyPureCloud/golang-sdk-notification-service.git/command_factory"
+	"github.com/MyPureCloud/golang-sdk-notification-service.git/command_factory"
 	"github.com/MyPureCloud/golang-sdk-notification-service.git/command_interface"
 	"github.com/mypurecloud/platform-client-sdk-go/v56/platformclientv2"
-	//"github.com/tidwall/pretty"
+	"github.com/tidwall/pretty"
 	"log"
 	"net/url"
 	"os"
 	"os/signal"
 	"regexp"
-	//"strings"
+	"strings"
 )
 
 type concurrentNotificationService struct {

@@ -11,8 +11,6 @@ func main() {
 	topic1 := os.Getenv("USERS_ID_PRESENCE")
 	topic2 := os.Getenv("ROUTING_QUEUES_ID_USERS")
 
-	// NOTE: need to improve. as of now topics are just a list of strings.
-	// maybe we could supply topics from a directory containing JSON files
 	topics := []string{topic1, topic2}
 
 	ns := flag.String("ns", "", "notification service: supported values: concurrent, sequential")
